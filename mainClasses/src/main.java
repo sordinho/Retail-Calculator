@@ -7,7 +7,10 @@ class main{
 
         Scanner keyboard = new Scanner(System.in);
         System.out.println("enter the number of products");
-        int myint = keyboard.nextInt();
+        int numberOfItems = keyboard.nextInt();
+
+        System.out.println("enter the price of the product");
+        float price = keyboard.nextFloat();
 
 
         System.out.println("Hello World!");
