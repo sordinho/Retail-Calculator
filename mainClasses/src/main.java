@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 class main{
@@ -23,6 +25,7 @@ class main{
         u.setNumberOfProd(numberOfItems);
         u.setProdPrice(price);
 
-        System.out.println(u.getTotal()+ " $");
+        NumberFormat nf=new DecimalFormat("#0.00");
+        System.out.println(nf.format(u.getTotal())+ " $");
     }
 }
