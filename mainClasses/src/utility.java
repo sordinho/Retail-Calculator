@@ -11,6 +11,16 @@
 public class utility {
 
 	private int numberOfProd;
+
+	public float getProdPrice() {
+		return prodPrice;
+	}
+
+	public void setProdPrice(float prodPrice) {
+		this.prodPrice = prodPrice;
+	}
+
+	private float prodPrice;
 	private State s;
 	private String stateString;
 
@@ -30,10 +40,15 @@ public class utility {
 	}
 
 	public double getTotal(){
-		double total = 0;
-		total+= numberOfProd;
+		double total;
 
 		Double discount = s.getDiscountByState(this.stateString);
+		total=this.numberOfProd*this.prodPrice;
+
+		total+=(total*discount/100);
+		discount d = new discount();
+		double discount2=d.getDiscount(total);
+		total-=(discount2);
 
 		return total;
 	}
