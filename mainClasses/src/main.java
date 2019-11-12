@@ -23,6 +23,6 @@ class main{
         u.setNumberOfProd(numberOfItems);
         u.setProdPrice(price);
 
-        System.out.println(u.getTotal());
+        System.out.println(u.getTotal()+ " $");
     }
 }

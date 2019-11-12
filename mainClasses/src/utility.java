@@ -43,12 +43,14 @@ public class utility {
 		double total;
 
 		Double discount = s.getDiscountByState(this.stateString);
+		System.out.println("Tax from state: " + this.stateString + " = " + discount + " %");
 		total=this.numberOfProd*this.prodPrice;
 
 		total+=(total*discount/100);
 		discount d = new discount();
 		double discount2=d.getDiscount(total);
-		total-=(discount2);
+		System.out.println("Discount of: " + total + " = " + discount2 + " %");
+		total-=(total*discount2);
 
 		return total;
 	}
