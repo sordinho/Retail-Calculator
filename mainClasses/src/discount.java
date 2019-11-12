@@ -35,7 +35,7 @@ public class discount {
 		rates.add(0.15);
 	}
 
-	public Double getDiscount(int total) {
+	public Double getDiscount(double total) {
 		for (int i = 0; i < 5; i++) {
 			if (total - values.get(i) < 0) {
 				if (i == 0)

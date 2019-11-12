@@ -21,8 +21,8 @@ class main{
 
         utility u = new utility(state);
         u.setNumberOfProd(numberOfItems);
+        u.setProdPrice(price);
 
-//        System.out.println(s.getDiscountByState(state));
-        System.out.println("Hello World!");
+        System.out.println(u.getTotal());
     }
 }
