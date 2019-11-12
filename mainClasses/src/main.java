@@ -19,7 +19,7 @@ class main{
         BufferedReader ob = new BufferedReader(new InputStreamReader(System.in));
         String state=ob.readLine();
 
-        utility u = new utility();
+        utility u = new utility(state);
         u.setNumberOfProd(numberOfItems);
 
 //        System.out.println(s.getDiscountByState(state));
