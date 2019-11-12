@@ -13,11 +13,10 @@ import java.util.HashMap;
 
 public class discount {
 
-	private HashMap<Integer,Double> discountMap;
+	private HashMap<Integer, Double> discountMap;
 
 	private ArrayList<Integer> values;
 	private ArrayList<Double> rates;
-
 
 
 	public discount() {
@@ -36,10 +35,14 @@ public class discount {
 		rates.add(0.15);
 	}
 
-	public  Double getDiscount(int total){
-		for (int i = 0; i < 5 ; i++) {
-			if (values
-			)
+	public Double getDiscount(int total) {
+		for (int i = 0; i < 5; i++) {
+			if (total - values.get(i) < 0) {
+				if (i == 0)
+					return rates.get(0);
+				else return rates.get(i);
+			}
 		}
+		return -1.0;
 	}
 }
