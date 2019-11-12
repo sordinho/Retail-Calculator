@@ -22,10 +22,8 @@ public class State {
         this.stateMap = stateMap;
     }
 
-    public Double getùDiscountByState(String state){
-
-
-
+    public Double getDiscountByState(String state){
+        return null;
     }
 
 }
