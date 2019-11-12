@@ -23,7 +23,7 @@ public class State {
     }
 
     public Double getDiscountByState(String state){
-        return null;
+        return this.stateMap.get(state);
     }
 
 }
