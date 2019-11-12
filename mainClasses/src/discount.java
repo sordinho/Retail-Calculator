@@ -39,7 +39,7 @@ public class discount {
 		for (int i = 0; i < 5; i++) {
 			if (total - values.get(i) < 0) {
 				if (i == 0)
-					return rates.get(0);
+					return 0.0;
 				else return rates.get(i-1);
 			}
 		}
